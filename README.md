@@ -31,12 +31,36 @@ orangehrm_automation/
 │
 ├── conftest.py
 └── requirements.txt
+______________________________________________________________________________________________________________________________________________________________________________________
 
 ⚙️ Instalación
-1️⃣ Instalar dependencias
+Instalar dependencias
+
+Instalar Firefox
+
+Primero revisa si ya lo tienes:
+firefox --version
+
+Si no está instalado:
+
+En Ubuntu / Debian:
+sudo apt update
+sudo apt install firefox
+
+Instalar GeckoDriver
+
+Firefox usa un driver llamado GeckoDriver.
+
+En terminal:
+sudo apt install firefox-geckodriver
+
+Verifica que funcione:
+geckodriver --version
 
 Ubícate en la raíz del proyecto y ejecuta:
 pip install -r requirements.txt
+
+______________________________________________________________________________________________________________________________________________________________________________________
 
 ejecución de los tests
 
@@ -56,6 +80,8 @@ Valida que el usuario Admin pueda iniciar sesión correctamente.
 Valida que se pueda crear un nuevo empleado dentro del sistema.
 
 🔹 test_search_employee.py
+
+______________________________________________________________________________________________________________________________________________________________________________________
 
 Valida que se puede buscar un empleado existente.
 
